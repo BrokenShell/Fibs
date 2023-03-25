@@ -1,13 +1,10 @@
 from MonkeyScope import timer
-from fib_funcs import (fib_class_cache,
-                       fib_func_memo,
-                       fib_cache,
-                       fib_generator,
-                       fib_iter,
-                       fib_iter_cache,
-                       fib_iter_memo,
-                       fib_lambda_calc,
-                       fib_recursive)
+from fib_funcs.fib_lambda_calc import fib_lambda_calc
+from fib_funcs.fib_recursive import fib_recursive
+from fib_funcs.fib_generator import fib_generator
+from fib_funcs.fib_cache import fib_class_cache, fib_func_memo, fib_cache
+from fib_funcs.fib_iterative import fib_iter, fib_iter_cache, fib_iter_memo
+
 
 N = 10
 print(f"Fib Benchmarks for {N = }")
