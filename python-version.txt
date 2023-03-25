@@ -1,0 +1,1 @@
+MonkeyScope requires python3 >= 3.7
