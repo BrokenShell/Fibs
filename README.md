@@ -15,6 +15,7 @@ F(n) = F(n-1) + F(n-2) for n > 1
 - Fib Iteration: `/fib_funcs/fib_iteration.py`
 - Fib Generator: `/fib_funcs/fib_generator.py`
 - Fib Function Caching: `/fib_funcs/fib_cache.py`
+- Fib Matrix Exponentiation: `/fib_funcs/fib_matrix.py`
 - Fib Lambda Calculus: `/fib_funcs/fib_lambda_calc.py`
 
 Some interesting properties of the Fibonacci sequence include:

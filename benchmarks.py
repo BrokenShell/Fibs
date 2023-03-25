@@ -4,9 +4,10 @@ from fib_funcs.fib_recursive import fib_recursive
 from fib_funcs.fib_generator import fib_generator
 from fib_funcs.fib_cache import fib_class_cache, fib_func_memo, fib_cache
 from fib_funcs.fib_iterative import fib_iter, fib_iter_cache, fib_iter_memo
+from fib_funcs.fib_matrix import fib_matrix_exponentiation
 
 
-N = 10
+N = 100
 print(f"Fib Benchmarks for {N = }")
 
 print(f"\n{fib_lambda_calc(N) = }")
@@ -35,3 +36,6 @@ timer(fib_cache, N)
 
 print(f"\n{fib_iter_cache(N) = }")
 timer(fib_iter_cache, N)
+
+print(f"\n{fib_matrix_exponentiation(N) = }")
+timer(fib_matrix_exponentiation, N)
