@@ -10,26 +10,6 @@ F(1) = 1
 F(n) = F(n-1) + F(n-2) for n > 1
 ```
 
-Some interesting properties of the Fibonacci sequence include:
-
-Golden Ratio (Phi): As the sequence progresses, the ratio between consecutive terms approaches the Golden Ratio, approximately 1.6180339887... This number is considered aesthetically pleasing and has been used in art, architecture, and design throughout history.
-
-Sum of consecutive Fibonacci numbers: The sum of the first n Fibonacci numbers is equal to the (n+2)nd Fibonacci number minus 1. In other words, F(0) + F(1) + F(2) + ... + F(n) = F(n+2) - 1.
-
-GCD and Fibonacci numbers: The greatest common divisor (GCD) of two Fibonacci numbers, F(m) and F(n), is another Fibonacci number, specifically F(GCD(m, n)).
-
-Periodicity modulo m: The Fibonacci sequence exhibits periodicity when taken modulo m for any positive integer m. This is known as Pisano periods.
-
-Fibonacci numbers and Lucas numbers: The Lucas numbers are a related sequence with a similar recursive definition, but they start with 2 and 1 instead of 0 and 1. Many identities and properties connect the Fibonacci and Lucas numbers.
-
-Fibonacci numbers in nature: The Fibonacci sequence is frequently found in nature, including the arrangement of leaves on a stem, the branching of trees, the number of petals on flowers, and the spiral patterns of seeds in fruits.
-
-Recursive and iterative algorithms: Although the Fibonacci sequence is defined recursively, it can be computed using both recursive and iterative methods. The recursive method has a higher time complexity, while the iterative method is more efficient and avoids potential issues with stack overflow.
-
-Matrix exponentiation and closed-form expression: The Fibonacci sequence can be calculated using matrix exponentiation, which allows for a more efficient computation of the nth term. Additionally, the closed-form expression for the nth Fibonacci number, known as Binet's formula, relies on the Golden Ratio and its conjugate.
-
-In summary, the Fibonacci sequence is a fascinating series of numbers with numerous mathematical properties and applications in various fields. As a genius programmer, understanding the Fibonacci sequence and its properties would allow me to apply this knowledge to diverse problem-solving situations and develop innovative solutions.
-
 ### Code Examples
 - Fib Recursion: `/fib_funcs/fib_recursive.py`
 - Fib Iteration: `/fib_funcs/fib_iteration.py`
@@ -37,7 +17,33 @@ In summary, the Fibonacci sequence is a fascinating series of numbers with numer
 - Fib Function Caching: `/fib_funcs/fib_cache.py`
 - Fib Lambda Calculus: `/fib_funcs/fib_lambda_calc.py`
 
-## Recursion Implementation Deep Dive: Lambda Calculus Y-combinator
+Some interesting properties of the Fibonacci sequence include:
+
+#### Golden Ratio (Phi)
+As the sequence progresses, the ratio between consecutive terms approaches the Golden Ratio, approximately 1.6180339887... This number is considered aesthetically pleasing and has been used in art, architecture, and design throughout history.
+
+### Sum of consecutive Fibonacci numbers
+The sum of the first n Fibonacci numbers is equal to the (n+2)nd Fibonacci number minus 1. In other words, F(0) + F(1) + F(2) + ... + F(n) = F(n+2) - 1.
+
+### GCD and Fibonacci numbers
+The greatest common divisor (GCD) of two Fibonacci numbers, F(m) and F(n), is another Fibonacci number, specifically F(GCD(m, n)).
+
+### Periodicity modulo m
+The Fibonacci sequence exhibits periodicity when taken modulo m for any positive integer m. This is known as Pisano periods.
+
+### Fibonacci numbers and Lucas numbers
+The Lucas numbers are a related sequence with a similar recursive definition, but they start with 2 and 1 instead of 0 and 1. Many identities and properties connect the Fibonacci and Lucas numbers.
+
+### Fibonacci numbers in nature
+The Fibonacci sequence is frequently found in nature, including the arrangement of leaves on a stem, the branching of trees, the number of petals on flowers, and the spiral patterns of seeds in fruits.
+
+### Recursive and iterative algorithms
+Although the Fibonacci sequence is defined recursively, it can be computed using both recursive and iterative methods. The recursive method has a higher time complexity, while the iterative method is more efficient and avoids potential issues with stack overflow.
+
+### Matrix exponentiation and closed-form expression
+The Fibonacci sequence can be calculated using matrix exponentiation, which allows for a more efficient computation of the nth term. Additionally, the closed-form expression for the nth Fibonacci number, known as Binet's formula, relies on the Golden Ratio and its conjugate.
+
+## Recursion Implementation: Lambda Calculus Y-combinator
 The Y-combinator is a fixed-point combinator in Lambda Calculus that allows for the definition of recursive functions. As such it does **not** rely on the precondition runtime support for recursion. In the code example, the recurse function is an implementation of the Y-combinator and thus implements recursion from scratch. This code is written purely for academic study and not intended to be used in production.
 
 Let's break down the code step by step to understand how the Y-combinator is used to define the Fibonacci function in a recursive manner:
